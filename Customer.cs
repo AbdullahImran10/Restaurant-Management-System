@@ -30,7 +30,7 @@ public class Customer
     public void AddVisits()
     {
         Visits++;
-        if (Visits > 3)
+        if (Visits > 2)
         {
             LoyaltyPoints+=3;
         }
