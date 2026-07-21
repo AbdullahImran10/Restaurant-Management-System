@@ -28,7 +28,7 @@ public class Bill
 
     public void RemoveItem(string itemID)
     {
-        MenuItem item = OrderedItems.Find(x => x.ItemID == itemID);
+        MenuItem? item = OrderedItems.Find(x => x.ItemID == itemID);
         if (item != null)
         {
             OrderedItems.Remove(item);
